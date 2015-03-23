@@ -1,0 +1,2 @@
+var nda_baronet = new Date();
+document.writeln('<scrip' + 't type="text/javascript"  src="http://s.tuoitre.vn/DominoX/tracking.ashx?action=5b47bde3-cfa0-4991-9bc7-eec7afa5c06e&ext=72f45f84-c265-4ddf-ac76-ca7cbd41b44d&v=' + nda_baronet.getMilliseconds() + '" ></scrip' + 't>');

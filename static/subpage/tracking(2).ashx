@@ -1,0 +1,1 @@
+document.writeln('<div style="margin-bottom:5px;">');document.writeln('<iframe width="160px" height="600px" frameborder="0" src="http://chocuoituan.vn/cachetto/cct_160x600.html" allowtransparency="no" marginheight="0" marginwidth="0" scrolling="no"></iframe>');document.writeln('</div>');

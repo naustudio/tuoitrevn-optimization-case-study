@@ -1,0 +1,1 @@
+document.writeln('<div style="margin-bottom:5px;">');document.writeln('<iframe width="420px" scrolling="no" height="242px" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="no" src="http://cohoi.tuoitre.vn/TTO_new/pack2_detail_bottom.php"></iframe>');document.writeln('</div>');

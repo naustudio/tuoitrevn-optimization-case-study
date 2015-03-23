@@ -1,0 +1,1 @@
+document.writeln('<div style="margin-bottom:5px;">');document.writeln('<iframe width="980px" height="272px" frameborder="0" src="http://cohoi.tuoitre.vn/cachettos/chttopack1_980x272.html" allowtransparency="no" marginheight="0" marginwidth="0" scrolling="no"></iframe>');document.writeln('</div>');
