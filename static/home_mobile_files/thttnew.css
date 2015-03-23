@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* reset */
+*{margin:0;padding:0;outline:none}
+ul,ol{list-style:none;margin:0;padding:0;}
+a,img{border:none}
+a img:hover{border:none}
+a{text-decoration:none;color:#333;transition:all 300ms ease-in-out 0s;-moz-transition:all 300ms ease-in-out 0s;-webkit-transition:all 300ms ease-in-out 0s;-o-transition:all 300ms ease-in-out 0s;}
+a:hover{color:#e32c22;cursor:pointer}
+h5.name {font-weight: 700;font-size: 13px;line-height: 18px;}
+/* css page */
+body{font:12px/1.55 Arial,sans-serif;color:#333;background:#fff;}
+.tvo{border-bottom:3px solid #e0e0e0;overflow:hidden;margin-bottom:12px;float: left;width: 626px;}
+.title_tt{border-top:2px solid #e32c22;background:#f6f6f6;height:32px;line-height:32px;padding-left:10px;padding-right:10px;font-size:13px;font-weight:700;margin-bottom:12px;}
+.tvo .title_tt a{background:url(../images/bg-tto.png) 0px -512px no-repeat;padding-left:30px;display:inline-block;text-transform:uppercase;}
+.tvo_left{float:left;width:254px;position:relative}
+.tvo_left_name{position:absolute;left:0;bottom:0px;background:url(../images/nen.png) repeat-x;width:100%;padding:10px 0 24px;}
+.tvo_left_name a{padding:0 15px;color:#fff;font-weight:700;font-size:14px;}
+.tvo_right{border-left:1px dashed #e0e0e0;padding-left:11px;margin-left:12px;float:left;width:347px;padding-bottom:10px;}
+.ct_slide_tvo {overflow:hidden; position:relative;width: 360px;  height:187px;}
+.ct_slide_tvo .items {width:20000em;  position:absolute; height:122px;}
+.ct_slide_tvo .items div {float:left;margin-right:14px;width:106px; height:122px;}
+.ct_slide_tvo .items a {position: relative;}
+.ct_slide_tvo .items .label {position: absolute; top: -12px; left: 6px}
+.tvo .tructiep{text-transform:uppercase;font-size:9px;color:#878787;background:url(../images/bg-tto.png) 0px -691px no-repeat;padding-left:15px;margin-top:7px;display:inline-block;}
+.tvo_right .btn{text-transform:uppercase;background-image:url(../images/bg-tto.png);background-repeat:no-repeat;font-size:9px;color:#878787;position:absolute; bottom:0;}
+.tvo_right .btn:hover{color:#000}
+.tvo_right .btn.prev{left:0; background-position:0 -615px;padding-left:20px;}
+.tvo_right .btn.prev:hover{background-position:0 -643px;}
+.tvo_right .btn.next{right:11px; background-position:-24px -615px;padding-right:24px;}
+.tvo_right .btn.next:hover{background-position:-24px -643px;}

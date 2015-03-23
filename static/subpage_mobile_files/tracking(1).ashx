@@ -1,0 +1,1 @@
+document.writeln('<div style="margin-bottom:5px;">');document.writeln('<scrip' + 't type="text/javascript" src="http://pub.akanetwork.com/Tuoitre_mobile_middle_300x250.js"></scrip' + 't>');document.writeln('</div>');

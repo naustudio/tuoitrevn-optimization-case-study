@@ -1,0 +1,238 @@
+/* CSS Document */
+.Wrapper {
+    overflow: visible;
+    height: 1%;
+}
+html>body .Wrapper {
+    overflow: hidden;
+    height: auto;
+}
+.relative{
+	position:relative;	
+}
+.float-l{
+	float:left;	
+}
+.float-r{
+	float: right;	
+}
+.block-comment{
+	font-size: 12px;	
+	font-family:Arial, Helvetica, sans-serif;
+	height:auto;
+	overflow:hidden;
+	clear:both;
+}
+.block-comment form { overflow:hidden; /* padding-top:5px; margin-top:10px; */}
+.block-comment form textarea { resize:none; width:260px; padding:3px 5px; height:44px; background:#fff;  }
+.block-comment form .overflow { border-top:#e3e3e3 solid 1px; padding-top:5px; margin-top:5px;}
+.block-comment .form-comment{
+	position: relative;
+	
+	padding: 20px 0px;
+	border: 0px;
+}
+.block-comment .form-comment legend{
+	border: #e1eaf1 solid 1px;
+	padding: 2px 8px;
+	background: #FFFFFF;
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	font-weight: bold;
+	color: #292929;
+}
+/* .block-comment .form-comment .txt-cmt{
+	padding-left: 60px;	
+} */
+.block-comment .form-comment img{
+	position:absolute;
+	z-index: 2;
+	left: 10px;
+}
+.block-comment .form-comment textarea{
+	float:left;
+	width: 100%;
+	height: 44px;	
+	border: 1px solid #ccc;
+	font-size: 12px;
+    padding: 5px ;
+	
+}
+.block-comment .form-comment p{
+	float:left;
+	color: #acacac;
+	font-size: 11px;
+	font-style: italic;
+	margin: 0px;
+	padding: 10px 0px 0px 10px;	
+}
+.block-comment .form-comment p span{
+	color: #0079BE;
+}
+.block-comment .form-comment button, .block-comment .form-comment .button {
+	float:right; line-height: 16px;
+	background-color: #365291;
+	padding: 5px 25px;
+	margin: 8px 1px 0px 0px;
+	font-size: 12px; font-weight: bold;
+	color: #FFF;
+	text-transform:uppercase;
+	cursor: pointer;
+	border: 0px;
+	
+}
+.block-comment .lst-comment .readmore-cm  { padding-top: 5px; display: block; padding-left: 0;}
+.block-comment .form-comment button:hover { background:#4274e5;}
+.block-comment .lst-comment ul li dl{
+	padding:5px 0px 0px 0; position:relative; height:auto; overflow: hidden; clear:both; min-height: 50px;
+}
+.block-comment .lst-comment ul li ul dl{
+	margin-left: 40px;
+	padding: 5px 0px 0px 0; background: url(../images/border.png) top left repeat-x;
+}
+.time {padding-left: 15px; color:#b8c0c1; background: url(../images/bgd-time.png) 5px 5px no-repeat;}
+/*list comment*/
+.lst-comment ul li dl dd p{word-wrap : break-word; font-size: 14px; padding: 3px 0; color:#333;}
+.lst-comment { width:100%; background:url(../images/bgd-line-x.png) 0 0 repeat-x; padding:0 5px 10px 5px; color:#6f6f6f; height:auto; overflow: hidden; clear:both; line-height:18px;}
+	.lst-comment strong { color:#212121;}
+	.lst-comment .readmore{ color:#0079BE; text-decoration:none; padding-bottom: 6px; display:block;}
+	.lst-comment ul { float:left; width:100%; margin:0px; padding: 0px;}
+	.lst-comment > ul {  border-bottom: solid 1px #ccc;}
+	.lst-comment > ul > li {border-top: solid 1px #ccc;}.lst-comment > ul > li:first-child { border: none;}
+		.lst-comment ul li {   padding:3px 0 ; float:left; width:100%; list-style-type: none;}
+			.lst-comment ul li dl { }
+				.lst-comment ul li dl dt { position:absolute; z-index: 4; left: 0px;}
+				.lst-comment ul li dl dd { width: 100%;  float:left; margin-left: 0px;}
+				.lst-comment ul li dl dd .top { overflow:hidden;}
+					.lst-comment ul li dl dd em { color:#a0a0a0; font-size:11px;}
+					.lst-comment ul li dl dd .name { color:#878787; font-weight:bold;}
+						.lst-comment ul li dl dd a:hover.name, .lst-comment ul li dl dd a:hover.reply, .lst-comment ul li dl dd a:hover.like, .lst-comment ul li dl dd a:hover.report { text-decoration:underline; color:#3b5998;}
+					.lst-comment ul li dl dd .reply { color:#3b5998; font-size:11px; cursor: pointer;}
+					.lst-comment ul li dl dd .like, .lst-comment ul li dl dd .unlike { background:url(../images/icon.png) -60px 0 no-repeat; padding-left:15px; color:#a0a0a0; font-size:11px;}
+						.lst-comment ul li dl dd .like strong, .lst-comment ul li dl dd .unlike strong { color:#0079BE;}
+					.lst-comment ul li dl dd .report { color:#a0a0a0; font-size:11px; border-left:#a0a0a0 solid 1px; padding-left:6px; margin-left:6px;}
+	
+	.lst-comment .seeall {  background:#bdcbd6; height:15px; float:left; padding-left:5px; color:#FFFFFF; font-size:10px; margin-top:5px; margin-bottom: 5px; line-height:15px; cursor:pointer ; border-radius: 3px;}
+	.lst-comment a:hover.seeall { color:#0079BE;}
+		.lst-comment .seeall span {  background:#bdcbd6; height:15px; float:left; padding-right:5px; border-radius: 3px;}
+			.lst-comment .seeall span span { background:#bdcbd6; height:15px; float:left; padding:0;}
+	
+	.more { height:15px; float:right; padding-left:5px; color:#FFFFFF; font-size:10px; margin-top:5px; line-height:15px; cursor:pointer}
+	a:hover.more { color:#f1f1f1;}
+		.more span {  height:15px; float:left; padding-right:5px; color: #FFFFFF;}
+			.more span span {  height:15px; float:left; padding:0;color: #80a10e; }
+		.lst-comment ul li ul dl dd { min-width:200px; position:relative; margin-left: 0px; width: 98%}
+		
+	.lst-comment ul li.write-cmt { background:#f0f4f7; border:none;}
+		.lst-comment ul li.write-cmt textarea { width:98%; height:30px; resize:none; border:#dee8f0 solid 1px; padding:3px;}
+		
+		.lst-comment ul li.write-cmt .btn-send { margin:3px 8px 3px 0;}
+			.lst-comment ul li.write-cmt .btn-send li { border-top:none;}
+			.cat-detail .ico-4 { margin-top:0}
+
+.btn-send {
+	float: left;
+	position: relative;
+	margin: 3px 8px 0 0;
+}
+.btn-send .btn {border-radius: 3px; float:left; height:24px; padding:0 0 0 8px; color:#333; font-weight:bold; font-size:11px; cursor:pointer; line-height:15px;  border: solid 1px #ccc; background:#eee;
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #CCCCCC 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #CCCCCC 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #CCCCCC 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #CCCCCC));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #CCCCCC 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #CCCCCC 100%);
+}
+.btn-send .btn span { float:left; height:27px; padding:0 8px 0 0 !important;}
+.btn-send  .btn span span { float:left; height:21px; padding:5px 0 0 0 !important; color:#292929 !important; font-style:normal !important; font-size: 11px !important;}
+.btn-send .btn:hover { border-radius: 3px;
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #CCCCCC 0%, #FFFFFF 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #CCCCCC 0%, #FFFFFF 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(top, #CCCCCC 0%, #FFFFFF 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #CCCCCC), color-stop(1, #FFFFFF));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #CCCCCC 0%, #FFFFFF 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #CCCCCC 0%, #FFFFFF 100%);
+}
+/*.icon {
+	background: url(../images/icon.png) 0 0 no-repeat;
+}*/			
+.ico-67 {
+	background-position: -60px -120px!important;
+	width: 7px;
+	height: 10px;
+	position: absolute;
+	top: 25px;
+	left: -6px;
+}
+.showmore{
+	background:url(../images/bg-f-sm.png) repeat-x top left;
+	height: 18px;
+	position:relative;	
+	text-align: center;
+	padding-top: 4px;
+	overflow: hidden;
+	clear:both;
+	margin: 10px 8px;
+}
+.showmore-1 { margin: 10px 0 0 0;}
+#ranking .showmore{
+	margin-left: 0; margin-right: 0;
+}
+.showmore a{
+	color: #838f97;
+	font-weight:bold;
+	font-size: 11px;
+	display:block;
+	background:url(../images/icon-link.png) no-repeat 73px -554px;
+	width: 80px;
+	margin: 0px auto;
+	text-decoration:none; line-height: 12px;
+}
+.showmore:hover a { color:#0079BE;}
+.showmore .sm-left{
+	position:absolute;
+	z-index: 1;
+	width: 4px;
+	height: 22px;
+	top: 0px;
+	left: 0px;
+	background:url(../images/bg-l-sm.png) no-repeat top left;	
+}
+.showmore .sm-right{
+	position:absolute;
+	z-index: 1;
+	width: 4px;
+	height: 22px;
+	top: 0px;
+	right: 0px;
+	background:url(../images/bg-r-sm.png) no-repeat top right;
+}
+.lk-pl{ font-size: 11px; color:gray; text-decoration:none; float:left; margin-top: 10px;}
+.block-comment .txt-cmt h3  { font-size: 12px; font-weight: bold; color:#b8c0c1;padding: 2px 0 10px 0;}
+.block-comment .txt-cmt h3 span {color:#3b5998; text-transform: uppercase;}
+.list-select { overflow: hidden; padding: 10px 20px; background:#f2f2f2; text-align: right;}
+.list-select li { display: inline-block; padding: 0 5px; color:#333;}
+.list-select li a { color:#333;}
+.list-select li a:hover,.list-select li.active a  { color:#3b5998;}
+.list-select li:first-child {padding-right: 10px; padding-left: 0;}
+.btn-reply { display: inline-block; font-size: 10px; text-transform: uppercase; color:#3b5998; margin-right: 5px;}
+.btn-like-cm { display: inline-block; padding-left: 12px; font-size: 10px; text-transform: uppercase; color:#3b5998; background: url(../images/icon-likes.png) 0 3px no-repeat;}
+.btn-like-cm span { color:#7f7f7f; padding-left: 2px;}
+.readmore-cm { color:#3b5998; font-weight: bold; padding-left: 5px;}
+.readmore-cm:hover { text-decoration: underline;}
+
+
+

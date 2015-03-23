@@ -1,0 +1,2 @@
+var nda_m_300_250_1 = new Date();
+document.writeln('<scrip' + 't type="text/javascript"  src="http://s.tuoitre.vn/DominoX/tracking.ashx?action=5b47bde3-cfa0-4991-9bc7-eec7afa5c06e&ext=a57da22e-8237-479e-bd93-5a91358211ea&v=' + nda_m_300_250_1.getMilliseconds() + '" ></scrip' + 't>');
