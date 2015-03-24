@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"home",
+				"homepage"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"thi",
+				"thitruong"
+			],
+			[
 				"box-s",
 				"box-sizing"
 			],
@@ -502,23 +514,36 @@
 			[
 				"asset",
 				"asset-amount"
-			],
-			[
-				"label_pay",
-				"label_pay_with"
-			],
-			[
-				"cre",
-				"credit"
-			],
-			[
-				"label_acc",
-				"label_account_to_debit"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 828,
+				"line_ending": "Unix",
+				"name": "gulpfile.js"
+			}
+		},
+		{
+			"file": "optimized/css/style.css",
+			"settings":
+			{
+				"buffer_size": 134271,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/home.html",
+			"settings":
+			{
+				"buffer_size": 268706,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -628,9 +653,34 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/node_modules",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/node_modules/gulp-minify-html/node_modules",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/node_modules/gulp-minify-html/node_modules/minimize",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/node_modules/gulp-minify-html/node_modules/minimize/lib",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/node_modules/gulp-usemin",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/optimized",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static"
 	],
 	"file_history":
 	[
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/home.html",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/package.json",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/homepage/print.css",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/node_modules/gulp-usemin/lib/blocksBuilder.js",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/optimized/css/style.css",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/optimized/home.html",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/home_mobile_files/print.css",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/node_modules/gulp-usemin/node_modules/glob/test/pause-resume.js",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/home_mobile_files/bootstrap.min.css",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/subpage_mobile_files/bootstrap.css",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/home_mobile_files/bootstrap.css",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/subpage/cb=gapi.loaded_0",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/subpage.html",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/subpage/ca-pub-6307797943563198.js",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/node_modules/grunt-contrib-watch/CHANGELOG",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/subpage_mobile.html",
+		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/home_mobile_files/saved_resource(1)",
 		"/Users/thang/Aleph.git/uob-travelinsurance/plans.html",
 		"/Users/thang/Aleph.git/uob-travelinsurance/assets/js/pages/plans.js",
 		"/Users/thang/Aleph.git/uob-travelinsurance/assets/css/pages/plans.css",
@@ -645,13 +695,10 @@
 		"/Users/thang/Aleph.git/uob-travelinsurance/login-existing-new-user.html",
 		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/home_mobile_files/saved_resource",
 		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/homepage/saved_resource",
-		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/home_mobile_files/saved_resource(1)",
 		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/homepage/saved_resource(1)",
 		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/node_modules/time-grunt/node_modules/chalk/node_modules/.bin/strip-ansi",
-		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/subpage.html",
 		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/home_mobile_files/jscroll.css",
 		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/subpage/screen.css",
-		"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static/home.html",
 		"/Users/thang/learning/react/css/app.css",
 		"/Users/thang/todomvc/examples/react/js/todoModel.js",
 		"/Users/thang/learning/react/index.html",
@@ -744,31 +791,18 @@
 		"/Users/thang/Aleph.git/ocbc-barcelona/fna/css/digital_forms/layout/_redemption.scss",
 		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/relci/relci_disclaimer.js",
 		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/client_search/views/client_search.ejs",
-		"/Users/thang/Aleph.git/ocbc-barcelona/can/view/live.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/helper/Validation.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/lib/global.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/client_search/client_search_json.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/client_search/client_search.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/steal/browser/client.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/continue_from_last/continue_from_last.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/OCBC-Barcelona.sublime-project",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/application_for_time_deposit_account/application_for_time_deposit_account.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/si/views/si.ejs",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/si/si.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/si/si_json.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/application_for_time_deposit_account/views/application_for_time_deposit_account.ejs",
-		"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms/si/si_summary.js",
-		"/Users/thang/Aleph.git/ocbc-barcelona/HTML2PDF/credit_card_authorisation.html"
+		"/Users/thang/Aleph.git/ocbc-barcelona/can/view/live.js"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static",
 			"/Users/thang/Aleph.git/uob-travelinsurance/assets/css",
 			"/Users/thang/Nau-project/tuoitrevn-optimization-case-study/static",
 			"/Users/thang/Aleph.git/ocbc-barcelona/fna/modules/digital_forms",
@@ -796,6 +830,55 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"endbuild",
+			"getFiles",
+			"ild:css css/style.cs",
+			"body{font-family:\"Times New Roman\",Times,serif;line-height:1.3}fieldset,img{border:0}h1{font-size:1.4em}h2{font-size:1.8em}h3{font-size:1.1em}h4,h5{font-size:1em}ol,ul{list-style-type:none}li{list-style-type:disc}dt{font-weight:700}h1 a{text-decoration:none}a{color:#000}a:hover{text-decoration:none}input,select,textarea{border:1px solid #000}input{padding:1px 0}select{margin:0;padding:0;line-height:normal}div{text-align:left}caption{display:none}table{border-collapse:separate;border-spacing:0}td,th{padding:5px;border-right:1px solid #000;border-bottom:1px solid #000;text-align:left}.block-adv-1,.block-banner,.block-key,.block-left.block-left-new,.block-qc,.block-share,.breadcrumb,.btn-qt,.btn-top,.btnSlideshow,.highlight,.highlight-3,.list-social,.list-tool,.right-side,.sup-title,.top-menu,.wrapPopup,.wrapper-nav,.wrapper-slider,aside,footer,nav{display:none}img{max-width:500px}table,table td{border:none}.caption{text-align:center;font-style:italic;padding-top:0;padding-bottom:10px}.fck table.trichdan{background:#f6f6f6;margin-bottom:15px;font-size:12px;font-weight:700;color:#333;padding:0;border-top:none;border-bottom:none;position:relative}.fck table.trichdan .quote_author{text-align:right;color:#7c7c7c}.fck table.trichdan tbody td{padding:5px 15px 10px}.fck table.trichdan tbody tr:first-child td{padding:15px 10px 5px 40px;background:url(../images/bullet-1.png) 10px 15px no-repeat;line-height:16px}.fck p{color:#333}.fck .slide_content img{width:100%;cursor:url(../images/zoom_cursor.png),auto}.fck .icon-zoom{cursor:pointer;z-index:2}.fck img.img-1{width:auto}.hlight{padding:15px 20px;background:#f6f6f6}.fck p.noted{font-size:12px;font-weight:700;color:#333;padding:5px 0 25px 27px;width:70%;margin:0 auto;border-top:solid 1px #e9e9e9;border-bottom:solid 1px #e9e9e9;position:relative}.noted img{position:absolute;top:8px;left:0}.noted .author{position:absolute;right:0;bottom:8px;color:#7c7c7c}.btn-qt{float:left}.btn-qt a{border-radius:3px;line-height:20px;height:20px;padding:0 8px 0 20px;background:url(../images/icon-like.png) 6px 5px no-repeat #a2a2a2;float:left;font-size:10px;color:#fff;text-transform:uppercase}.wrapper-qt strong{float:right}.wrapper-qt{overflow:hidden}.btn-qt>span{float:left;padding:0 2px;color:#878787;font-size:11px;border:1px solid #e0e0e0;height:18px;position:relative;margin-left:7px}.btn-qt span span{width:5px;height:9px;position:absolute;top:50%;left:-5px;margin-top:-4.5px;z-index:2;background:url(../images/arrow-r.png) no-repeat}.btn-qt a:hover{color:#fff;background-color:#e32c22}.fck p,.fck table{font-size:13.5px;margin-bottom:14px;line-height:18px}.fck a{color:##0072;font-size:13px}embed{margin-bottom:14px}.fck table.desc_image{margin:0 auto 14px}.qc{display:none}",
+			"<!--",
+			"build:js js/app.js",
+			"<script",
+			"<script ty",
+			" <!-- <script ty",
+			"<script ",
+			"script type=\"text/javascri",
+			"<script",
+			"<script type=\"text/javascript\" language=\"javascript",
+			"<script type=\"text/javascript\" language=\"java",
+			"<script type=\"text/javascript\" language=\"ja",
+			"<script type=\"text/javascript\" lang",
+			"<script type=\"text/javascri",
+			"script type=\"text/javascript\" language",
+			"cript type=\"text/javas",
+			"ript type=\"text/javascri",
+			"<scrip",
+			"media",
+			"cssMediaQuery",
+			"=",
+			"gapi",
+			"/*# sourceMappingURL=bootstrap.css.map */",
+			"http://s.tuoitre.vn/DominoX/click.ashx?ID=4743;328a4f92-0eb2-4e16-86ad-21e5198f4d78;http://tuoitre.vn/tin/chinh-tri-xa-hoi/20150323/chat-cay-xanh-ha-noi/724115.html",
+			"http://s.tuoitre.vn/getbin/viewimg.ashx?fn=2015_03_04_16_39_35_Nhadat-300x250-mau-1.swf",
+			"atic/images",
+			"tatic/image",
+			"ata=\"/static",
+			"ngurl=/stati",
+			"e=\"/stat",
+			"ingurl=/sta",
+			"ue=\"/static/ima",
+			"ata=\"/static/i",
+			"/static/images/abc.swf",
+			"/static",
+			"<param",
+			"http://cm.tuoitre.vn/resources/images/loading.gif",
+			"http://s.tuoitre.vn/DominoX/click.ashx?ID=4652;878e4b96-22a4-4250-ad2b-d331b47cd40c;http://tuoitre.vn/tin/chinh-tri-xa-hoi/20150323/chat-cay-xanh-ha-noi/724115.html",
+			"http://s.tuoitre.vn/getbin/viewimg.ashx?fn=2015_02_07_14_31_27_ThangLong-300x250-03-02.swf",
+			"http://s.tuoitre.vn/getbin/viewimg.ashx?fn=2015_01_03_10_35_09_daikin_300x250-05-01.swf",
+			"http://s.tuoitre.vn/getbin/viewimg.ashx?fn=2015_02_14_13_57_37_donghothuysi_14-2.swf",
+			"images/dotted-hover-1.png",
+			"../images/2015",
+			"/images/2015_03_",
+			"http://s.tuoitre.vn/DominoX/click.ashx?ID=4814;fff4ce74-30df-4acb-bd09-c0e1da34211a;http://tuoitre.vn/",
+			"http://s.tuoitre.vn/getbin/viewimg.ashx?fn=2015_03_07_09_42_26_Banner-web-vn-2015.gif",
 			"swipe-",
 			"swipe",
 			" swipe-item",
@@ -874,56 +957,7 @@
 			"item",
 			"TodoItem",
 			"handlerToggle",
-			"edit",
-			"handlerToggle",
-			"Input",
-			"Toggle",
-			"toggle",
-			"Toggle",
-			"toggle",
-			"todoI",
-			"handlerToggle",
-			"onSave",
-			"handleNewTodoKeyDown",
-			"handlerKeyDown",
-			"\"",
-			"MyButton",
-			"main",
-			"handleEdit",
-			"handlerClick",
-			"handleEdit",
-			"../../",
-			"nowShowing",
-			"todoItem",
-			"TodoItem",
-			"this.element.find('.mailing-address-cell').text(this.model.applicant['mailing_address']);",
-			"this.element.find('.mailing-address-cell').text(this.model.applicant['residential_address']);",
-			"_examineUsResidentialAddress",
-			"setData",
-			"GLobal ",
-			"enter",
-			"error_address_multi_building_name",
-			"address_multi_building_nam",
-			"-",
-			"block",
-			"removeValidation",
-			"validation",
-			"this.val",
-			"field",
-			"elemnt",
-			"%== textI",
-			"<%== cssSel",
-			"$thi",
-			"validateF",
-			"address",
-			"option",
-			"Option",
-			"option",
-			"Option",
-			"Select",
-			".join(separator)",
-			"','",
-			"-2"
+			"edit"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -931,6 +965,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"/* sourceMappingURL=bootstrap.css.map */",
 			"this.element.find('.mailing-address').text(this.model.applicant['mailing_address']);",
 			"this.element.find('.mailing-address').text(this.model.applicant['residential_address']);",
 			"<div class=\"row\">\n                            <div class=\"columns small-3 half-height\">",
@@ -967,8 +1002,100 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								570,
+								578
+							]
+						],
+						"settings":
+						{
+							"auto_name": "gulpfile.js",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 3
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "optimized/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 134271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28458,
+								28458
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda (SL).tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "static/home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 268706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3210,
+								3210
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1018,6 +1145,26 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"print",
+				"static/homepage/print.css"
+			],
+			[
+				"cb",
+				"static/subpage/cb=gapi.loaded_0"
+			],
+			[
+				"boo",
+				"static/subpage_mobile_files/bootstrap.css"
+			],
+			[
+				"boot",
+				"static/home_mobile_files/bootstrap.css"
+			],
+			[
+				"sub",
+				"static/subpage.html"
+			],
 			[
 				"g",
 				"Gruntfile.js"
@@ -1509,26 +1656,6 @@
 			[
 				"elci_js",
 				"fna/modules/digital_forms/elci/elci_json.js"
-			],
-			[
-				"apput",
-				"fna/modules/digital_forms/application_for_unit_trust/application_for_unit_trust.js"
-			],
-			[
-				"elci_j",
-				"fna/modules/digital_forms/elci/elci_json.js"
-			],
-			[
-				"summar_e",
-				"fna/modules/digital_forms/elci/summary_elci.js"
-			],
-			[
-				"_var",
-				"fna/css/main/_variables.scss"
-			],
-			[
-				"summau",
-				"fna/modules/digital_forms/ut_redemption/summary_ut_redemption_json.js"
 			]
 		],
 		"width": 0.0
@@ -1557,7 +1684,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 274.0,
+	"side_bar_width": 259.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
