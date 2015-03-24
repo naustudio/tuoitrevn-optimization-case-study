@@ -61,7 +61,7 @@ dfn {
 }
 h1 {
   margin: .67em 0;
- 
+
 }
 mark {
   color: #000;
@@ -915,7 +915,7 @@ a {
 }
 a:hover {
   color: #2a6496;
-  
+
 }
 /* a:focus {
   outline: thin dotted;
@@ -3167,7 +3167,7 @@ tbody.collapse.in {
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
- 
+
   text-decoration: none;
   background-color: #f5f5f5; font-weight: bold;
 }
@@ -5991,7 +5991,7 @@ button.close {
 }
  @-ms-viewport {
   width: device-width;
-} 
+}
 .visible-xs,
 .visible-sm,
 .visible-md,
@@ -6199,4 +6199,4 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+/* sourceMappingURL=bootstrap.css.map */
