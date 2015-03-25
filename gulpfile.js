@@ -2,24 +2,35 @@
  * gulp file for minify files
  */
 
-'use strict';
 var gulp       = require('gulp');
 var usemin     = require('gulp-usemin');
 var uglify     = require('gulp-uglify');
 var minifyHtml = require('gulp-minify-html');
 var minifyCss  = require('gulp-minify-css');
 var rev        = require('gulp-rev');
+var copy2      = require('gulp-copy2');
 
-gulp.task('usemin', function() {
-
-   var src = {
+var path = {
+   source: {
       root: 'static/',
-      build: 'optimized/',
-      imgSrc: 'static/images',
-      imgBuild: 'optimized/images'
+      imgs: 'static/images/',
+      homepage: 'static/homepage/',
+      subpage: 'static/homepage/'
+   },
+   optimized: {
+      root: 'optimized/',
+      imgs: 'optimized/images/',
+      homepage: 'optimized/homepage/',
+      subpage: 'optimized/homepage/'
    }
+};
 
-   return gulp.src(src.root + '*.html')
+// Minify css, js, html
+// main html: homepage.html, subpage.html,
+// homepage_mobile.html, subpage_mobile.html
+gulp.task('usemin-main-page', function() {
+
+   return gulp.src(path.source.root + '*.html')
       .pipe(usemin({
          css: [minifyCss({
             advanced: true,
@@ -30,7 +41,63 @@ gulp.task('usemin', function() {
          })],
          js: [uglify(), rev()],
       }))
-      .pipe(gulp.dest(src.build));
+      .pipe(gulp.dest(path.optimized.root));
 });
 
-gulp.task('default', ['usemin']);
+// Minify css, js, html
+// main html: homepage.html, subpage.html,
+// homepage_mobile.html, subpage_mobile.html
+gulp.task('usemin-homepage', function() {
+
+   return gulp.src(path.source.homepage + '*.html')
+      .pipe(usemin({
+         css: [minifyCss({
+            advanced: true,
+            keepSpecialComments: 0
+         }), 'concat', rev()],
+         html: [minifyHtml({
+            empty: true
+         })],
+         js: [uglify(), rev()],
+      }))
+      .pipe(gulp.dest(path.optimized.homepage));
+});
+
+// Copy images
+gulp.task('copy-images', function () {
+    var paths = [
+         // homepage
+         {src: path.source.homepage + '*.jpg', dest: path.source.homepage},
+         {src: path.source.homepage + '*.png', dest: path.source.homepage},
+         {src: path.source.homepage + '*.jpeg', dest: path.source.homepage},
+         {src: path.source.homepage + '*.ashx', dest: path.source.homepage},
+         {src: path.source.homepage + '*.html', dest: path.source.homepage}
+         /*
+         // subpage
+         {src: 'static/subpage/*.jpg', dest: 'optimized/subpage/'},
+         {src: 'static/subpage/*.png', dest: 'optimized/subpage/'},
+         {src: 'static/subpage/*.jpeg', dest: 'optimized/subpage/'},
+         {src: 'static/subpage/*.ashx', dest: 'optimized/subpage/'},
+
+         // homepage
+         {src: 'static/homepage/*.jpg', dest: 'optimized/homepage/'},
+         {src: 'static/homepage/*.png', dest: 'optimized/homepage/'},
+         {src: 'static/homepage/*.jpeg', dest: 'optimized/homepage/'},
+         {src: 'static/homepage/*.ashx', dest: 'optimized/homepage/'}
+         */
+    ];
+    return copy2(paths);
+});
+
+// Copy fonts
+gulp.task('copy-fonts', function() {
+   var paths = [
+       {src: 'static/fonts/*.*', dest: 'optimized/fonts/'}
+   ];
+   return copy2(paths);
+});
+
+// gulp.task('usemin', ['usemin-main-page', 'usemin-homepage']);
+
+// register default task
+gulp.task('default', ['usemin-main-page', 'usemin-homepage', 'copy-images', 'copy-fonts']);
