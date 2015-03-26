@@ -36,9 +36,9 @@ gulp.task('usemin-main-page', function() {
             advanced: true,
             keepSpecialComments: 0
          }), 'concat'],
-         html: [minifyHtml({
-            empty: true
-         })],
+         // html: [minifyHtml({
+         //    empty: true
+         // })],
          js: [uglify(), rev()],
       }))
       .pipe(gulp.dest(path.optimized.root));
