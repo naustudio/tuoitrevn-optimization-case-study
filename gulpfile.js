@@ -101,4 +101,4 @@ gulp.task('usemin', ['usemin-main-page', 'usemin-homepage']);
 
 // register default task
 // gulp.task('default', ['usemin-main-page', 'copy-images', 'copy-fonts']);
-gulp.task('default', ['usemin-main-page', 'copy-images', 'copy-fonts']);
+gulp.task('default', ['usemin-main-page']); // ['usemin-main-page', 'copy-images', 'copy-fonts']);
