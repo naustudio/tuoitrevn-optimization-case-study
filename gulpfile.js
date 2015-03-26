@@ -21,7 +21,7 @@ var path = {
       root: 'optimized/',
       imgs: 'optimized/images/',
       homepage: 'optimized/homepage/',
-      subpage: 'optimized/homepage/'
+      subpage: 'optimized/subpage/'
    }
 };
 
@@ -54,7 +54,7 @@ gulp.task('usemin-homepage', function() {
          css: [minifyCss({
             advanced: true,
             keepSpecialComments: 0
-         }), 'concat', rev()],
+         }), 'concat'],
          html: [minifyHtml({
             empty: true
          })],
@@ -66,19 +66,19 @@ gulp.task('usemin-homepage', function() {
 // Copy images
 gulp.task('copy-images', function () {
     var paths = [
+         {src: path.source.imgs + '*.*', dest: path.optimized.imgs},
          // homepage
-         {src: path.source.homepage + '*.jpg', dest: path.source.homepage},
-         {src: path.source.homepage + '*.png', dest: path.source.homepage},
-         {src: path.source.homepage + '*.jpeg', dest: path.source.homepage},
-         {src: path.source.homepage + '*.ashx', dest: path.source.homepage},
-         {src: path.source.homepage + '*.html', dest: path.source.homepage}
-         /*
-         // subpage
-         {src: 'static/subpage/*.jpg', dest: 'optimized/subpage/'},
-         {src: 'static/subpage/*.png', dest: 'optimized/subpage/'},
-         {src: 'static/subpage/*.jpeg', dest: 'optimized/subpage/'},
-         {src: 'static/subpage/*.ashx', dest: 'optimized/subpage/'},
+         {src: path.source.homepage + '*.jpg', dest: path.optimized.homepage},
+         {src: path.source.homepage + '*.png', dest: path.optimized.homepage},
+         {src: path.source.homepage + '*.jpeg', dest: path.optimized.homepage},
+         {src: path.source.homepage + '*.ashx', dest: path.optimized.homepage},
 
+         // subpage
+         {src: path.source.subpage + '*.jpg', dest: path.optimized.subpage},
+         {src: path.source.subpage + '*.png', dest: path.optimized.subpage},
+         {src: path.source.subpage + '*.jpeg', dest: path.optimized.subpage},
+         {src: path.source.subpage + '*.ashx', dest: path.optimized.subpage}
+         /*
          // homepage
          {src: 'static/homepage/*.jpg', dest: 'optimized/homepage/'},
          {src: 'static/homepage/*.png', dest: 'optimized/homepage/'},
@@ -97,7 +97,8 @@ gulp.task('copy-fonts', function() {
    return copy2(paths);
 });
 
-// gulp.task('usemin', ['usemin-main-page', 'usemin-homepage']);
+gulp.task('usemin', ['usemin-main-page', 'usemin-homepage']);
 
 // register default task
-gulp.task('default', ['usemin-main-page', 'usemin-homepage', 'copy-images', 'copy-fonts']);
+// gulp.task('default', ['usemin-main-page', 'copy-images', 'copy-fonts']);
+gulp.task('default', ['usemin-main-page', 'copy-images', 'copy-fonts']);
