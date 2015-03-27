@@ -55,9 +55,9 @@ gulp.task('usemin-homepage', function() {
             advanced: true,
             keepSpecialComments: 0
          }), 'concat'],
-         html: [minifyHtml({
-            empty: true
-         })],
+         // html: [minifyHtml({
+         //    empty: true
+         // })],
          js: [uglify(), rev()],
       }))
       .pipe(gulp.dest(path.optimized.homepage));
@@ -100,5 +100,5 @@ gulp.task('copy-fonts', function() {
 gulp.task('usemin', ['usemin-main-page', 'usemin-homepage']);
 
 // register default task
-// gulp.task('default', ['usemin-main-page', 'copy-images', 'copy-fonts']);
-gulp.task('default', ['usemin-main-page']); // ['usemin-main-page', 'copy-images', 'copy-fonts']);
+gulp.task('default', ['copy-images', 'copy-fonts', 'usemin']);
+// gulp.task('default', ['usemin-main-page']); // ['usemin-main-page', 'copy-images', 'copy-fonts']);

@@ -1,2 +1,10 @@
-Gruntfile.js
-node_modules/
+# NodeJS #
+####################
+.gulp
+node_modules
+optimized
+
+# SublimeText #
+###############
+# workspace files are user-specific
+*.sublime-workspace
