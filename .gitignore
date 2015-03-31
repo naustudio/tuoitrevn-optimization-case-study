@@ -3,6 +3,7 @@
 .gulp
 node_modules
 optimized
+testgulp
 
 # SublimeText #
 ###############

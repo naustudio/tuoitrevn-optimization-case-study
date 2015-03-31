@@ -5,68 +5,81 @@
 var gulp       = require('gulp');
 var usemin     = require('gulp-usemin');
 var uglify     = require('gulp-uglify');
-var minifyHtml = require('gulp-minify-html');
+// var minifyHtml = require('gulp-minify-html');
 var minifyCss  = require('gulp-minify-css');
 var rev        = require('gulp-rev');
 var copy2      = require('gulp-copy2');
 
+var dir = {
+   src: 'static/',
+   optimized: 'optimized/'
+};
+
 var path = {
+   htmls: {
+      home: dir.src + 'home.html',
+      subpage: dir.src + 'subpage.html',
+      homeMobile: dir.src + 'home_mobile.html',
+      subpageMobile: dir.src + 'subpage_mobile.html'
+   },
    source: {
-      root: 'static/',
-      imgs: 'static/images/',
-      homepage: 'static/homepage/',
-      subpage: 'static/homepage/'
+      root: dir.src,
+      imgs: dir.src + 'images/',
+      fonts: dir.src + 'fonts/',
+      homepage: dir.src + 'homepage/',
+      subpage: dir.src + 'subpage/'
    },
    optimized: {
-      root: 'optimized/',
-      imgs: 'optimized/images/',
-      homepage: 'optimized/homepage/',
-      subpage: 'optimized/subpage/'
+      root: dir.optimized,
+      imgs: dir.optimized + 'images/',
+      fonts: dir.optimized + 'fonts/',
+      homepage: dir.optimized + 'homepage/',
+      subpage: dir.optimized + 'subpage/'
    }
 };
 
-// Minify css, js, html
-// main html: homepage.html, subpage.html,
-// homepage_mobile.html, subpage_mobile.html
-gulp.task('usemin-main-page', function() {
-
-   return gulp.src(path.source.root + '*.html')
+/**
+ * minify home.html
+ */
+gulp.task('minify-home', function() {
+   return gulp.src(path.htmls.home)
       .pipe(usemin({
          css: [minifyCss({
             advanced: true,
             keepSpecialComments: 0
          }), 'concat'],
-         // html: [minifyHtml({
-         //    empty: true
-         // })],
-         js: [uglify(), rev()],
+         commonJs: [uglify()],
+         libJs: [uglify()],
+         js: [uglify()]
       }))
-      .pipe(gulp.dest(path.optimized.root));
+      .pipe(gulp.dest(path.optimized.root))
 });
 
-// Minify css, js, html
-// main html: homepage.html, subpage.html,
-// homepage_mobile.html, subpage_mobile.html
-gulp.task('usemin-homepage', function() {
-
-   return gulp.src(path.source.homepage + '*.html')
+/**
+ * minify subpage.html
+ */
+gulp.task('minify-subpage', function() {
+   return gulp.src(path.htmls.subpage)
       .pipe(usemin({
          css: [minifyCss({
             advanced: true,
             keepSpecialComments: 0
          }), 'concat'],
-         // html: [minifyHtml({
-         //    empty: true
-         // })],
-         js: [uglify(), rev()],
+         commonJs: [uglify()],
+         libJs: [uglify()],
+         js: [uglify()]
       }))
-      .pipe(gulp.dest(path.optimized.homepage));
+      .pipe(gulp.dest(path.optimized.root))
 });
+
+gulp.task('minify-desktop', ['minify-home', 'minify-subpage']);
 
 // Copy images
-gulp.task('copy-images', function () {
+gulp.task('copy', function () {
     var paths = [
+         // coopy images
          {src: path.source.imgs + '*.*', dest: path.optimized.imgs},
+         {src: path.source.fonts + '*.*', dest: path.optimized.fonts},
          // homepage
          {src: path.source.homepage + '*.jpg', dest: path.optimized.homepage},
          {src: path.source.homepage + '*.png', dest: path.optimized.homepage},
@@ -78,27 +91,25 @@ gulp.task('copy-images', function () {
          {src: path.source.subpage + '*.png', dest: path.optimized.subpage},
          {src: path.source.subpage + '*.jpeg', dest: path.optimized.subpage},
          {src: path.source.subpage + '*.ashx', dest: path.optimized.subpage}
-         /*
-         // homepage
-         {src: 'static/homepage/*.jpg', dest: 'optimized/homepage/'},
-         {src: 'static/homepage/*.png', dest: 'optimized/homepage/'},
-         {src: 'static/homepage/*.jpeg', dest: 'optimized/homepage/'},
-         {src: 'static/homepage/*.ashx', dest: 'optimized/homepage/'}
-         */
     ];
     return copy2(paths);
 });
 
-// Copy fonts
-gulp.task('copy-fonts', function() {
-   var paths = [
-       {src: 'static/fonts/*.*', dest: 'optimized/fonts/'}
-   ];
-   return copy2(paths);
-});
-
-gulp.task('usemin', ['usemin-main-page', 'usemin-homepage']);
-
 // register default task
-gulp.task('default', ['copy-images', 'copy-fonts', 'usemin']);
-// gulp.task('default', ['usemin-main-page']); // ['usemin-main-page', 'copy-images', 'copy-fonts']);
+gulp.task('default', ['copy', 'minify-desktop']);
+
+/**
+ * test case
+ *
+gulp.task('test', function() {
+   return gulp.src('testgulp/index.html')
+      .pipe(usemin({
+         // css: [minifyCss({
+         //    advanced: true,
+         //    keepSpecialComments: 0
+         // }), 'concat', rev()],
+         js: [uglify(), rev()],
+      }))
+      .pipe(gulp.dest('testgulp/optimized'));
+});
+*/

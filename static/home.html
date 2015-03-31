@@ -25,7 +25,7 @@
 
    <title>Tin tức, tin nóng, đọc báo điện tử - Tuổi Trẻ Online</title>
 
-   <!-- build:css css/style.css -->
+   <!-- build:css css/home.css -->
    <link rel="stylesheet" type="text/css" href="./homepage/flexslider.css" media="screen">
    <link rel="stylesheet" type="text/css" href="./homepage/plug-in-cmt.css" media="screen">
    <link rel="stylesheet" type="text/css" href="./homepage/jscroll.css" media="screen">
@@ -35,6 +35,8 @@
    <link rel="stylesheet" type="text/css" href="./homepage/font-awesome.min.css" media="screen">
    <link rel="stylesheet" type="text/css" href="./homepage/screen.css" media="screen">
    <link rel="stylesheet" type="text/css" href="./homepage/custom.css" media="screen">
+   <!-- endbuild -->
+
    <style type="text/css" media="screen">
       #bbe4334b-99cb-4140-8900-0d55182c4dfe {
          visibility: hidden;
@@ -55,10 +57,7 @@
          margin-right: 0px;
       }
    </style>
-   <!-- endbuild -->
    <!-- <link rel="stylesheet" type="text/css" href="./homepage/print.css" media="print"> -->
-
-
 </head>
 
 <body>
@@ -2541,8 +2540,7 @@
          <iframe width="980px" height="272px" frameborder="0" src="./homepage/chttohome_980x272.html" allowtransparency="no" marginheight="0" marginwidth="0" scrolling="no"></iframe>
       </div>
 
-
-
+      <iframe width="1" height="1" style="position:absolute; top:-9999px; left: -9999px; border-style: none" src="./homepage/cookie_enabled_get_apac.html"></iframe>
       <footer class="footer">
          <ul class="top-footer">
             <li><a href="http://tuoitrenews.vn/" target="_blank" title="Tuổi Trẻ News ">Tuổi Trẻ News </a></li>
@@ -2714,14 +2712,37 @@
          </div>
       </div>
    </div>
-   <iframe width="1" height="1" style="position:absolute; top:-9999px; left: -9999px; border-style: none" src="./homepage/cookie_enabled_get_apac.html"></iframe>
 
 
    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: none;">Top</a>
-   <!-- build:js js/app.js -->
+
+   <!-- build:libJs js/lib.js -->
+   <script type="text/javascript" src="./homepage/jquery.min.js"></script>
+   <script type="text/javascript" src="./homepage/jquery.flexslider.js"></script>
+   <script type="text/javascript" src="./homepage/jscrollpane.js"></script>
+   <script type="text/javascript" src="./homepage/jquery.fancybox.js"></script>
+   <script type="text/javascript" src="./homepage/jquery.fancybox-buttons.js"></script>
+   <script type="text/javascript" src="./homepage/jquery.fancybox-thumbs.js"></script>
+   <script type="text/javascript" src="./homepage/start.js"></script>
+   <script type="text/javascript" src="./homepage/custom.js"></script>
+   <!-- endbuild  -->
+
+   <!-- build:commonJs js/common.js -->
    <script async="" src="./homepage/analytics.js"></script>
    <script type="text/javascript" async="" src="./homepage/ga.js"></script>
    <script async="" type="text/javascript" src="./homepage/gpt.js"></script>
+   <script type="text/javascript" charset="UTF-8" src="./homepage/compass.js" onload="new microadCompass.AdInitializer().initialize();" async=""></script>
+   <script async="" type="text/javascript" src="./homepage/pubads_impl_58.js"></script>
+   <script type="text/javascript" language="javascript" src="./homepage/ads_top.js"></script>
+   <script type="text/javascript" language="javascript" src="./homepage/ads_right_300x250_1.js"></script>
+   <script type="text/javascript" language="javascript" src="./homepage/ads_right_300x250_2.js"></script>
+   <script type="text/javascript" language="javascript" src="./homepage/ads_bottom.js"></script>
+   <!-- endbuild -->
+
+   <!-- build:js js/home.js -->
+   <script type="text/javascript" language="javascript" src="./homepage/ads_center.js"></script>
+   <!-- endbuild -->
+   <script type="text/javascript" src="./homepage/tracking(6).ashx"></script>
 
    <!--  Start Phi Script-->
    <script type="text/javascript">
@@ -2786,26 +2807,6 @@
       var microadCompass = microadCompass || {};
       microadCompass.queue = microadCompass.queue || [];
    </script>
-   <script type="text/javascript" charset="UTF-8" src="./homepage/compass.js" onload="new microadCompass.AdInitializer().initialize();" async=""></script>
-   <script async="" type="text/javascript" src="./homepage/pubads_impl_58.js"></script>
-
-   <script type="text/javascript" language="javascript" src="./homepage/ads_top.js"></script>
-
-   <script type="text/javascript" language="javascript" src="./homepage/ads_right_300x250_1.js"></script>
-   <script type="text/javascript" language="javascript" src="./homepage/ads_center.js"></script>
-   <script type="text/javascript" language="javascript" src="./homepage/ads_right_300x250_2.js"></script>
-
-   <script type="text/javascript" language="javascript" src="./homepage/ads_bottom.js"></script>
-   <script type="text/javascript" src="./homepage/tracking(6).ashx"></script>
-
-   <script type="text/javascript" src="./homepage/jquery.min.js"></script>
-   <script type="text/javascript" src="./homepage/jquery.flexslider.js"></script>
-   <script type="text/javascript" src="./homepage/jscrollpane.js"></script>
-   <script type="text/javascript" src="./homepage/jquery.fancybox.js"></script>
-   <script type="text/javascript" src="./homepage/jquery.fancybox-buttons.js"></script>
-   <script type="text/javascript" src="./homepage/jquery.fancybox-thumbs.js"></script>
-   <script type="text/javascript" src="./homepage/start.js"></script>
-   <script type="text/javascript" src="./homepage/custom.js"></script>
    <script type="text/javascript">
       /*<![CDATA[*/
 
@@ -2849,7 +2850,6 @@
 
       /*]]>*/
    </script>
-   <!-- endbuild  -->
 </body>
 
 </html>
