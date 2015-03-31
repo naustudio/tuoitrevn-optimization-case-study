@@ -90,7 +90,8 @@ gulp.task('copy', function () {
          {src: path.source.subpage + '*.jpg', dest: path.optimized.subpage},
          {src: path.source.subpage + '*.png', dest: path.optimized.subpage},
          {src: path.source.subpage + '*.jpeg', dest: path.optimized.subpage},
-         {src: path.source.subpage + '*.ashx', dest: path.optimized.subpage}
+         {src: path.source.subpage + '*.ashx', dest: path.optimized.subpage},
+         {src: path.source.subpage + '*.html', dest: path.optimized.subpage}
     ];
     return copy2(paths);
 });
