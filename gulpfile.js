@@ -81,37 +81,12 @@ gulp.task('copy', function () {
          {src: path.source.imgs + '*.*', dest: path.optimized.imgs},
          {src: path.source.fonts + '*.*', dest: path.optimized.fonts},
          // homepage
-         {src: path.source.homepage + '*.jpg', dest: path.optimized.homepage},
-         {src: path.source.homepage + '*.png', dest: path.optimized.homepage},
-         {src: path.source.homepage + '*.jpeg', dest: path.optimized.homepage},
-         {src: path.source.homepage + '*.ashx', dest: path.optimized.homepage},
-
+         {src: path.source.homepage + '*.*', dest: path.optimized.homepage},
          // subpage
-         {src: path.source.subpage + '*.jpg', dest: path.optimized.subpage},
-         {src: path.source.subpage + '*.png', dest: path.optimized.subpage},
-         {src: path.source.subpage + '*.jpeg', dest: path.optimized.subpage},
-         {src: path.source.subpage + '*.ashx', dest: path.optimized.subpage},
-         {src: path.source.subpage + '*.html', dest: path.optimized.subpage},
-         {src: path.source.subpage + '*.css', dest: path.optimized.subpage}
+         {src: path.source.subpage + '*.*', dest: path.optimized.subpage}
     ];
     return copy2(paths);
 });
 
 // register default task
 gulp.task('default', ['copy', 'minify-desktop']);
-
-/**
- * test case
- *
-gulp.task('test', function() {
-   return gulp.src('testgulp/index.html')
-      .pipe(usemin({
-         // css: [minifyCss({
-         //    advanced: true,
-         //    keepSpecialComments: 0
-         // }), 'concat', rev()],
-         js: [uglify(), rev()],
-      }))
-      .pipe(gulp.dest('testgulp/optimized'));
-});
-*/
